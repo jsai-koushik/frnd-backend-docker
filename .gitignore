@@ -1,0 +1,24 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# React
+**/node_modules/
+**/dist/
+
+# Spring Boot
+**/target/
+
+# IDE
+**/.settings/
+**/.classpath
+**/.project
+.vscode/
+.idea/
+
+# Logs
+*.log

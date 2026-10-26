@@ -1,0 +1,127 @@
+backend-1  | 
+backend-1  |   .   ____          _            __ _ _
+backend-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+backend-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+backend-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+backend-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+backend-1  |  =========|_|==============|___/=/_/_/_/
+backend-1  | 
+backend-1  |  :: Spring Boot ::                (v4.1.1)
+backend-1  | 
+backend-1  | 2026-10-26T10:43:57.954Z  INFO 1 --- [com.klu.recuirementss] [           main] com.example.demo.Application             : Starting Application v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
+backend-1  | 2026-10-26T10:43:57.963Z  INFO 1 --- [com.klu.recuirementss] [           main] com.example.demo.Application             : No active profile set, falling back to 1 default profile: "default"
+backend-1  | 2026-10-26T10:43:58.965Z  INFO 1 --- [com.klu.recuirementss] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+backend-1  | 2026-10-26T10:43:59.037Z  INFO 1 --- [com.klu.recuirementss] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+backend-1  | 2026-10-26T10:43:59.958Z  INFO 1 --- [com.klu.recuirementss] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+backend-1  | 2026-10-26T10:43:59.983Z  INFO 1 --- [com.klu.recuirementss] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+backend-1  | 2026-10-26T10:43:59.983Z  INFO 1 --- [com.klu.recuirementss] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+backend-1  | 2026-10-26T10:44:00.021Z  INFO 1 --- [com.klu.recuirementss] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1994 ms
+backend-1  | 2026-10-26T10:44:00.048Z ERROR 1 --- [com.klu.recuirementss] [           main] t.s.DeferredServletContainerInitializers : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/com/example/demo/security/JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtService' defined in URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/com/example/demo/security/JwtService.class]: Failed to instantiate [com.example.demo.security.JwtService]: Constructor threw exception
+backend-1  | 2026-10-26T10:44:00.073Z  INFO 1 --- [com.klu.recuirementss] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+backend-1  | 2026-10-26T10:44:00.095Z  WARN 1 --- [com.klu.recuirementss] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+backend-1  | 2026-10-26T10:44:00.101Z  INFO 1 --- [com.klu.recuirementss] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+backend-1  | 
+backend-1  | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+backend-1  | 2026-10-26T10:44:00.117Z ERROR 1 --- [com.klu.recuirementss] [           main] o.s.boot.SpringApplication               : Application run failed
+backend-1  | 
+backend-1  | org.springframework.context.ApplicationContextException: Unable to start web server
+backend-1  | 	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-web-server-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at com.example.demo.Application.main(Application.java:10) ~[!/:0.0.1-SNAPSHOT]
+backend-1  | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+backend-1  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+backend-1  | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[app.jar:0.0.1-SNAPSHOT]
+backend-1  | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:0.0.1-SNAPSHOT]
+backend-1  | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:0.0.1-SNAPSHOT]
+backend-1  | Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+backend-1  | 	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150) ~[spring-boot-tomcat-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110) ~[spring-boot-tomcat-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429) ~[spring-boot-tomcat-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167) ~[spring-boot-tomcat-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190) ~[spring-boot-web-server-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-web-server-4.1.1.jar!/:4.1.1]
+backend-1  | 	... 13 common frames omitted
+backend-1  | Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/com/example/demo/security/JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtService' defined in URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/com/example/demo/security/JwtService.class]: Failed to instantiate [com.example.demo.security.JwtService]: Constructor threw exception
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53) ~[spring-boot-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55) ~[spring-boot-tomcat-4.1.1.jar!/:4.1.1]
+backend-1  | 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4573) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+backend-1  | 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
+backend-1  | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+backend-1  | 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
+backend-1  | 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:871) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:452) ~[tomcat-embed-core-11.0.24.jar!/:na]
+backend-1  | 	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131) ~[spring-boot-tomcat-4.1.1.jar!/:4.1.1]
+backend-1  | 	... 18 common frames omitted
+backend-1  | Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtService' defined in URL [jar:nested:/app/app.jar/!BOOT-INF/classes/!/com/example/demo/security/JwtService.class]: Failed to instantiate [com.example.demo.security.JwtService]: Constructor threw exception
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	... 58 common frames omitted
+backend-1  | Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.security.JwtService]: Constructor threw exception
+backend-1  | 	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:220) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:129) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	... 72 common frames omitted
+backend-1  | Caused by: io.jsonwebtoken.io.DecodingException: Illegal base64 character: '_'
+backend-1  | 	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221) ~[jjwt-api-0.12.6.jar!/:0.12.6]
+backend-1  | 	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:271) ~[jjwt-api-0.12.6.jar!/:0.12.6]
+backend-1  | 	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:39) ~[jjwt-api-0.12.6.jar!/:0.12.6]
+backend-1  | 	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:26) ~[jjwt-api-0.12.6.jar!/:0.12.6]
+backend-1  | 	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:52) ~[jjwt-api-0.12.6.jar!/:0.12.6]
+backend-1  | 	at com.example.demo.security.JwtService.<init>(JwtService.java:23) ~[!/:0.0.1-SNAPSHOT]
+backend-1  | 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+backend-1  | 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+backend-1  | 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+backend-1  | 	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:207) ~[spring-beans-7.0.9.jar!/:7.0.9]
+backend-1  | 	... 74 common frames omitted
+backend-1  | 

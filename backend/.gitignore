@@ -1,0 +1,20 @@
+
+/target/
+.mvn/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+
+# Ignore private environment files
+.env
+.env.*
+
+# Allow environment template on GitHub
+!.env.example
+
+# Ignore debugging logs
+*.log
+login-error.txt
